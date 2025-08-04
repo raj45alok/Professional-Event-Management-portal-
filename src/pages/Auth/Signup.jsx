@@ -52,7 +52,7 @@ const Signup = () => {
         email: formData.email,
         password: formData.password
       };
-      await axios.post('http://localhost:5000/api/auth/register', payload); // 🔗 Adjust URL if needed
+      await axios.post('http://localhost:5000/api/auth/register', payload); 
       alert('Registration successful!');
       navigate('/login');
     } catch (err) {
