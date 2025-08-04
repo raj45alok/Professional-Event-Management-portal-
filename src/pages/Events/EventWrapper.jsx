@@ -1,4 +1,4 @@
-// EventWrapper.jsx
+
 import { useParams } from 'react-router-dom';
 import ClassicEvent from './ClassicEvent';
 import ModernEvent from './ModernEvent';
