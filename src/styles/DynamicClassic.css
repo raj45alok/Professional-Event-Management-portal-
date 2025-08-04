@@ -1,4 +1,4 @@
-/* DynamicClassic.css */
+
 
 .classic-page {
   font-family: "Georgia", serif;
@@ -154,5 +154,5 @@
 
 
 .hero-overlay {
-  background: rgba(0,0,0,0.4); /* ← 40% black */
+  background: rgba(0,0,0,0.4); 
 }
