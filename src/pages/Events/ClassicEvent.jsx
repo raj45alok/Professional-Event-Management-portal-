@@ -1,7 +1,5 @@
-// src/pages/Events/Templates/ClassicEvent.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import '../../styles/ClassicEvent.css';
 import banner from '../../assets/classic-banner1.jpg';
 import partner1 from '../../assets/partner.jpg';
