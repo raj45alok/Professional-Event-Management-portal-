@@ -1,7 +1,7 @@
 // DynamicEvent.jsx
 
 import '../../styles/DynamicEvent.css';
-import { useState } from 'react'; // Make sure this is imported at the top
+import { useState } from 'react'; 
 
 const fallbackAvatar = 'https://via.placeholder.com/150?text=Speaker';
 const fallbackLogo = 'https://via.placeholder.com/100x50?text=Logo';
@@ -113,7 +113,7 @@ const [registered, setRegistered] = useState(false);
         <iframe
   key={idx}
   width="480"
-  height="270"  // 16:9 aspect ratio
+  height="270"  
   src={url.replace("watch?v=", "embed/")}
   frameBorder="0"
   allow="autoplay; encrypted-media"
