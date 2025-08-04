@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../../styles/TemplateSelection.css"; // <-- we’ll create this next
+import "../../styles/TemplateSelection.css"; 
 
 const TemplateSelection = () => {
   const navigate = useNavigate();
