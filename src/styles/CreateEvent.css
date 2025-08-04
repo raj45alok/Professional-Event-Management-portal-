@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f8fc;
+}
+
+.event-page {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem 6vw;
+  box-sizing: border-box;
+  background: #f7f8fc;
+}
+
+.event-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.event-header h1 {
+  font-size: 2.5rem;
+  color: #1d096b;
+  font-weight: 700;
+}
+
+/* === Tabs & Meta === */
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.tab-btn {
+  padding: 0.6rem 1.4rem;
+  background-color: #7c3aed;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.tab-btn.active {
+  background-color: #5b21b6;
+  color: white;
+}
+
+.tab-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.label-chip {
+  padding: 0.5rem 1.2rem;
+  background-color: #7c3aed;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* === Form Panel === */
+.event-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tab-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* === Form Layout === */
+.form-group,
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.form-row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+input,
+textarea,
+select {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #f9fafb;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  color: #1f2937;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.upload-area {
+  border: 2px dashed #c4b5fd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #f9f9fe;
+  position: relative;
+  width: 100%;
+}
+
+.upload-area input[type='file'] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.preview-image {
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+.preview-image-small {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+/* === Buttons === */
+/* Smaller Add buttons, aligned left */
+/* Smaller width, left-aligned Add buttons */
+.add-btn {
+  background: #4f46e5;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  display: block;
+  width: 80%;           /* 👈 80% width */
+  max-width: 300px;     /* ✅ Prevent it from growing too wide */
+  text-align: center;
+}
+.add-btn:hover {
+  background: #3730a3;
+}
+
+
+.submit-btn {
+  padding: 0.75rem 2rem;
+  background-color: #7c3aed;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #5b21b6;
+}
+
+.confirm-btn {
+  margin-top: 1rem;
+  background-color: #10b981;
+  color: white;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  width: fit-content;
+  max-width: 150px;
+}
+
+.confirm-btn:hover {
+  background-color: #059669;
+}
+
+.lock-notice {
+  color: #16a34a;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* === Navigation === */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav-btn {
+  padding: 0.6rem 1.4rem;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:disabled {
+  background-color: #f3f4f6;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* === Responsive === */
+@media screen and (max-width: 1024px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .event-page {
+    padding: 1.5rem;
+  }
+
+  .event-header h1 {
+    font-size: 2rem;
+  }
+
+  .submit-btn {
+    width: 100%;
+    align-self: center;
+  }
+
+  .tab-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+/* ---------- Video Section Styling ---------- */
+.video-form {
+  margin-top: 1.5rem;
+}
+
+.video-preview {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: #fefefe;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  width: fit-content;
+}
+
+/* ---------- Inline Template & Progress Buttons ---------- */
+.tab-meta-btn {
+  background:  #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-left: 2rem;
+  cursor: default;
+}

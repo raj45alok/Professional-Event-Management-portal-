@@ -1,0 +1,155 @@
+/* CLEAN CSS STYLED TEMPLATE SELECTOR */
+.template-page {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4fa;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.template-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ .nav-btn {
+  
+  padding: 8px 12px;
+  margin-left: 10px;
+  border: none;
+  background: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav .primary {
+  background-color: #6366f1;
+  color: white;
+  border-radius: 6px;
+}
+.template-content {
+  width: 95vw;
+  height: 86vh;
+  padding: 36px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #2b23c2;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.heading {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.subheading {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.template-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.template-card {
+  flex: 1;
+  min-width: 280px;
+  border: 2px solid #ccc;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.template-card.selected {
+  border-color: #4f46e5;
+  box-shadow: 0 0 12px rgba(79, 70, 229, 0.3);
+}
+
+.template-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.template-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.recommended {
+  background-color: #e0e7ff;
+  color: #4f46e5;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.template-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.template-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.modern-preview {
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  color: white;
+}
+
+.classic-preview {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.template-features {
+  font-size: 13px;
+  color: #444;
+  padding-left: 16px;
+  margin-top: 6px;
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.continue-btn {
+  background-color: rgb(70, 21, 127);
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}

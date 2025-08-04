@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.classic-container {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to right, #d9cfc5, #b8a89a);
+  padding: 2rem;
+  min-height: 100vh;
+  color: #3d2f28;
+}
+
+.classic-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
+  color: #4a362c;
+  margin-bottom: 2rem;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 480px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(243, 236, 229, 0.85);
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+  color: #573b2c;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #3f2d24;
+}
+
+.hero-text ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.6;
+  color: #3e2b21;
+}
+
+/* Sections */
+.section {
+  margin-top: 2.2rem;
+}
+
+.section h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: #5a3b30;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #3b2a21;
+}
+
+/* Agenda Table */
+.agenda-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  color: #3d2f25;
+}
+
+.agenda-table th,
+.agenda-table td {
+  border-bottom: 1px dashed #bbaea0;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.agenda-table th {
+  font-weight: bold;
+  background-color: #f4ece4;
+  color: #443028;
+}
+
+/* Partners */
+.partner-logos {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.partner-logo {
+  width: 380px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+  transform: scale(1.06);
+}
+
+/* Footer Buttons */
+.bottom-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #5b3d2d;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #eee5dd;
+  color: #5a4231;
+  border: 1px solid #bbaea2;
+}
+
+.btn-primary:hover {
+  background-color: #3f291c;
+}
+.btn-secondary:hover {
+  background-color: #e0d6cb;
+}
+/* Resizes and centers poster-style banner */
+.poster-banner {
+  width: 80%;
+  max-width: 400px;
+  height: 520px; /* Reduced height */
+  object-fit: cover; /* Ensures the image is cropped cleanly */
+  display: block;
+  margin: 0 auto 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border: 3px solid #bca68e;
+}
+
+
+.tab-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #444;
+  gap: 0.3rem;
+}
+
+.template-label strong {
+  color: #7c3aed;
+}
+
+.progress-label strong {
+  color: #059669;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.nav-btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-btn:disabled {
+  background-color: #f3f4f6;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.tab-btn {
+  padding: 0.6rem 1.4rem;
+  background-color: #7c3aed;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+}
+
+.tab-btn.active {
+  background-color: #5b21b6;
+  color: white;
+}
+
+.tab-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto; /* pushes to right */
+}
+
+.tab-meta .label-chip {
+  padding: 0.5rem 1.2rem;
+  background-color: #7c3aed;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background-color: #5D3A00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #7A4E00;
+}
+
+.btn-secondary {
+  background-color: #D2B48C;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #C0A674;
+}

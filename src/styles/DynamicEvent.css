@@ -1,0 +1,224 @@
+/* General Layout */
+.event-detail {
+  background: #f9f9fb;
+  color: #1f2937;
+  font-family: 'Segoe UI', sans-serif;
+  padding-bottom: 3rem;
+  overflow-x: hidden;
+}
+
+/* Sticky Navbar */
+.sticky-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #6c63ff, #b57eff);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.85;
+}
+
+/* Page Title */
+.page-heading {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+  font-weight: bold;
+}
+
+/* Section Styling */
+.section,
+.full-width-section,
+.dynamic-section {
+  max-width: 960px;
+  margin: 0 auto 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section h2,
+.full-width-section h2,
+.dynamic-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #4f46e5;
+  text-align: left;
+}
+
+.section p,
+.section li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.section.agenda ul {
+  padding-left: 1.5rem;
+  list-style: square;
+}
+
+.section.agenda li {
+  margin-bottom: 0.75rem;
+}
+
+/* Meta Info Block */
+.meta-info p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.meta-info p strong {
+  font-weight: 600;
+}
+
+/* Speaker & Partner Cards */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  width: 260px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  margin: 0.4rem 0 0.2rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Sponsors Logo Section */
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.sponsor-logos img {
+  max-height: 60px;
+  max-width: 140px;
+  object-fit: contain;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Contact Section */
+.contact {
+  text-align: left;
+}
+
+.contact p {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.contact a {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+/* Register Button */
+.register-btn {
+  background: linear-gradient(135deg, #6c63ff, #b57eff);
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.register-btn:hover {
+  opacity: 0.9;
+}
+
+/* Video Section */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sticky-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .page-heading {
+    font-size: 1.8rem;
+  }
+
+  .section,
+  .dynamic-section {
+    padding: 1rem;
+  }
+}
+.event-banner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0;
+}

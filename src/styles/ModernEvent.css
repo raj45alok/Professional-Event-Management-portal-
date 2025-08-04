@@ -1,0 +1,224 @@
+/* Light Gradient Background */
+.gradient-light {
+  background: linear-gradient(135deg, #6c63ff, #b57eff);
+  background-size: 400% 400%;
+  animation: softFade 12s ease infinite;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+/* Optional Animation for Subtle Movement */
+@keyframes softFade {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Heading */
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4b0082;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Hero */
+.hero-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.hero-img {
+  width: 350px;
+  border-radius: 12px;
+}
+.hero-content {
+  flex: 1;
+}
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.hero-content ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.6;
+}
+
+/* Tabs */
+.section-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+.section-tabs button {
+  background: transparent;
+  border: 2px solid white;
+  color: #4b0082;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.section-tabs button:hover {
+  background-color: white;
+  color: #4b0082;
+}
+
+/* Section Block */
+.section-block {
+  background: white;
+  max-width: 950px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+.section-block h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+.agenda-list {
+  list-style: none;
+  padding: 0;
+}
+.agenda-list li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 0;
+}
+.agenda-list span:first-child {
+  font-weight: 600;
+  color: #6b21a8;
+}
+
+/* Buttons Bottom */
+.bottom-buttons {
+  max-width: 900px;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+/* Updated Button Colors */
+.btn-primary {
+  background-color: #7c3aed; /* lighter purple */
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #6b21a8; /* deep violet on hover */
+}
+.btn-secondary {
+  background-color: #ede9fe;  /* light lavender */
+  color: #5b21b6;
+}
+.btn-secondary:hover {
+  background-color: #ddd6fe;
+}
+
+/* Classic Gradient (optional alternative background) */
+.classic-gradient {
+  background: linear-gradient(to right, #251868, #191963);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+/* Full Width Hero */
+.hero-card.full {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero-img.full-img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+
+/* Partner Logos */
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.partner-logo {
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.partner-logo:hover {
+  filter: none;
+}
+
+.video-wrapper {
+  width: 85%; /* Reduce size by 15% */
+  margin: 0 auto;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail {
+  position: relative;
+  cursor: pointer;
+}
+.video-thumbnail img {
+  width: 100%;
+  display: block;
+}
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+.video-thumbnail:hover .play-button {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 25px;
+  height: 0;
+}
+
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
