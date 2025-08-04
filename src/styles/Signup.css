@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #f3e8ff; /* light purple background */
+  background: #f3e8ff;
   font-family: sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
 .left-panel {
   width: 50%;
   display: flex;
-  flex-direction: column; /* allows vertical centering */
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
   padding: 2rem;
@@ -31,16 +31,16 @@ body {
   width: 100%;
   max-width: 400px;
   height: auto;
-  max-height: 93vh; /* Increased slightly from 90vh */
+  max-height: 93vh; 
   background: white;
-  padding: 1rem 1.25rem; /* Slightly reduced top padding */
+  padding: 1rem 1.25rem; 
   border: 1px solid #d1d5db;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 0.5rem; /* Tighter spacing between elements */
+  gap: 0.5rem; 
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -48,7 +48,7 @@ body {
   font-size: 1.1rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 0.2rem;  /* reduced further */
+  margin-bottom: 0.2rem;  
   color: #1e293b;
   letter-spacing: 0.4px;
 }
@@ -210,7 +210,7 @@ button:hover {
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.4); /* use behind text on image */
+  background: rgba(0, 0, 0, 0.4); 
   padding: 20px;
   border-radius: 10px;
 }
