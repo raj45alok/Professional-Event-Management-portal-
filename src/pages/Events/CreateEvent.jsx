@@ -12,18 +12,18 @@ const CreateEvent = () => {
   const selectedTemplate = localStorage.getItem("selectedTemplate") || "modern";
 
   const [formData, setFormData] = useState({
-  template: selectedTemplate || '',        // Ensure it's not undefined
+  template: selectedTemplate || '',        
   title: '',
   date: '',
   description: '',
   purpose: '',
-  bannerImage: '',                         // ❌ null → ✅ ''
+  bannerImage: '',                         
   agenda: [],
   newAgenda: { time: '', title: '', description: '', speaker: '' },
   speakers: [],
-  newSpeaker: { name: '', title: '', image: '' }, // ❌ null → ✅ ''
+  newSpeaker: { name: '', title: '', image: '' }, 
   partners: [],
-  newPartner: { name: '', logo: '' },             // ❌ null → ✅ ''
+  newPartner: { name: '', logo: '' },             
   videos: [],
   newVideo: '',
   contact: {
