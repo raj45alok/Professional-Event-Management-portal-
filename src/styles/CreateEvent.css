@@ -155,9 +155,6 @@ textarea {
   margin-top: 0.5rem;
 }
 
-/* === Buttons === */
-/* Smaller Add buttons, aligned left */
-/* Smaller width, left-aligned Add buttons */
 .add-btn {
   background: #4f46e5;
   color: white;
@@ -169,8 +166,8 @@ textarea {
   margin-bottom: 1rem;
   cursor: pointer;
   display: block;
-  width: 80%;           /* 👈 80% width */
-  max-width: 300px;     /* ✅ Prevent it from growing too wide */
+  width: 80%;          
+  max-width: 300px;     
   text-align: center;
 }
 .add-btn:hover {
@@ -269,7 +266,6 @@ textarea {
     margin-top: 1rem;
   }
 }
-/* ---------- Video Section Styling ---------- */
 .video-form {
   margin-top: 1.5rem;
 }
@@ -283,8 +279,6 @@ textarea {
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   width: fit-content;
 }
-
-/* ---------- Inline Template & Progress Buttons ---------- */
 .tab-meta-btn {
   background:  #6c63ff;
   color: white;
