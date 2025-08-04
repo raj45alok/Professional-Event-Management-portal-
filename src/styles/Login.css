@@ -185,7 +185,7 @@ background: linear-gradient(135deg, #a18cd1, #fbc2eb);
 
 .password-field-wrapper input {
   width: 100%;
-  padding-right: 2.5rem; /* space for the eye icon */
+  padding-right: 2.5rem; 
 }
 
 .toggle-password {
