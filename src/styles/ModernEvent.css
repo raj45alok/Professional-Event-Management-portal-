@@ -122,28 +122,27 @@
 
 /* Updated Button Colors */
 .btn-primary {
-  background-color: #7c3aed; /* lighter purple */
+  background-color: #7c3aed; 
   color: white;
 }
 .btn-primary:hover {
-  background-color: #6b21a8; /* deep violet on hover */
+  background-color: #6b21a8; 
 }
 .btn-secondary {
-  background-color: #ede9fe;  /* light lavender */
+  background-color: #ede9fe;  
   color: #5b21b6;
 }
 .btn-secondary:hover {
   background-color: #ddd6fe;
 }
 
-/* Classic Gradient (optional alternative background) */
+
 .classic-gradient {
   background: linear-gradient(to right, #251868, #191963);
   min-height: 100vh;
   padding: 2rem 1rem;
 }
 
-/* Full Width Hero */
 .hero-card.full {
   flex-direction: column;
   align-items: center;
@@ -157,7 +156,7 @@
   margin-bottom: 1rem;
 }
 
-/* Partner Logos */
+
 .partner-logos {
   display: flex;
   justify-content: center;
@@ -176,7 +175,7 @@
 }
 
 .video-wrapper {
-  width: 85%; /* Reduce size by 15% */
+  width: 85%; 
   margin: 0 auto;
   position: relative;
   border-radius: 12px;
@@ -210,7 +209,7 @@
 
 .responsive-video {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%; 
   padding-top: 25px;
   height: 0;
 }
