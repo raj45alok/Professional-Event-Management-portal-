@@ -163,12 +163,12 @@ body {
 .btn-secondary:hover {
   background-color: #e0d6cb;
 }
-/* Resizes and centers poster-style banner */
+
 .poster-banner {
   width: 80%;
   max-width: 400px;
-  height: 520px; /* Reduced height */
-  object-fit: cover; /* Ensures the image is cropped cleanly */
+  height: 520px; 
+  object-fit: cover; 
   display: block;
   margin: 0 auto 2rem auto;
   border-radius: 12px;
@@ -244,7 +244,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-left: auto; /* pushes to right */
+  margin-left: auto; 
 }
 
 .tab-meta .label-chip {
