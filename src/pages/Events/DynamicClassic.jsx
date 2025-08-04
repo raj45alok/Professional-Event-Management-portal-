@@ -1,4 +1,4 @@
-// DynamicClassic.jsx
+
 import '../../styles/DynamicClassic.css';
 
 const fallbackBanner = 'https://via.placeholder.com/1200x400?text=Event+Banner';
