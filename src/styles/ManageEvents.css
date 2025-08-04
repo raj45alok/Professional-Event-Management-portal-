@@ -98,7 +98,7 @@ html, body, #root {
 }
 
 .cta-btn {
-  background-color: #2563eb; /* blue-600 */
+  background-color: #2563eb; 
   color: white;
   padding: 0.6rem 1.2rem;
   border: none;
@@ -109,7 +109,7 @@ html, body, #root {
 }
 
 .cta-btn:hover {
-  background-color: #1d4ed8; /* slightly darker blue */
+  background-color: #1d4ed8; 
 }
 
 
@@ -206,7 +206,6 @@ html, body, #root {
   z-index: 10;
 }
 
-/* Updated Event Cards Grid */
 .event-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -216,13 +215,13 @@ html, body, #root {
 }
 @media (max-width: 1024px) {
   .event-cards-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 640px) {
   .event-cards-container {
-    grid-template-columns: 1fr; /* 1 column on phones */
+    grid-template-columns: 1fr; 
   }
 }
 
@@ -234,7 +233,7 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   transition: transform 0.2s;
-  width: 90%; /* reduces card width to 90% */
+  width: 90%; 
   margin: 0 auto;
 }
 
