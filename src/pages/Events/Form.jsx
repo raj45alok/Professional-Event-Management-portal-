@@ -1,4 +1,4 @@
-// src/pages/Events/Form.jsx
+
 import { useState } from 'react';
 import { uploadToS3 } from '../../services/aws';
 
