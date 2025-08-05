@@ -1,0 +1,65 @@
+import json
+import boto3
+import logging
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+dynamodb = boto3.resource('dynamodb')
+details_table = dynamodb.Table('EventDetailsTable')  # your actual table name
+
+def lambda_handler(event, context):
+    logger.info("Received event: %s", json.dumps(event))
+
+    params = event.get('queryStringParameters')
+    
+    if not params or 'eventId' not in params:
+        return {
+            'statusCode': 400,
+            'body': json.dumps({'error': 'Missing queryStringParameters or eventId'}),
+            'headers': {
+                'Access-Control-Allow-Origin': 'http://localhost:5173',
+                'Access-Control-Allow-Methods': 'GET,OPTIONS',
+                'Access-Control-Allow-Headers': 'Content-Type'
+            }
+        }
+
+    event_id = params['eventId']
+    logger.info("Fetching event with ID: %s", event_id)
+
+    try:
+        response = details_table.get_item(Key={'eventId': event_id})
+        item = response.get('Item')
+
+        if not item:
+            return {
+                'statusCode': 404,
+                'body': json.dumps({'error': 'Event not found'}),
+                'headers': {
+                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Access-Control-Allow-Methods': 'GET,OPTIONS',
+                    'Access-Control-Allow-Headers': 'Content-Type'
+                }
+            }
+
+        return {
+            'statusCode': 200,
+            'body': json.dumps(item),
+            'headers': {
+                'Access-Control-Allow-Origin': 'http://localhost:5173',
+                'Access-Control-Allow-Methods': 'GET,OPTIONS',
+                'Access-Control-Allow-Headers': 'Content-Type'
+            }
+        }
+
+    except Exception as e:
+        logger.error("Error fetching event: %s", str(e))
+        return {
+            'statusCode': 500,
+            'body': json.dumps({'error': str(e)}),
+            'headers': {
+                'Access-Control-Allow-Origin': 'http://localhost:5173',
+                'Access-Control-Allow-Methods': 'GET,OPTIONS',
+                'Access-Control-Allow-Headers': 'Content-Type'
+            }
+        }
