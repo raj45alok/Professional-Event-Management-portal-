@@ -21,26 +21,37 @@ export function AuthProvider({ children }) {
     setLoading(false);
   }, []);
 
-  const login = async (email, password) => {
-    try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', {
-        email,
-        password,
-      });
+ const login = async (email, password) => {
+  try {
+    const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/auth/login`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, password }),
+    });
 
-      const { token, user } = res.data;
+    const data = await response.json();
 
-      localStorage.setItem('token', token);
-      localStorage.setItem('user', JSON.stringify(user));
-      setCurrentUser(user);
-      return { success: true };
-    } catch (err) {
+    if (!response.ok) {
       return {
         success: false,
-        error: err.response?.data?.msg || 'Login failed',
+        error: data.msg || 'Login failed',
       };
     }
-  };
+
+    localStorage.setItem('token', data.token);
+    localStorage.setItem('user', JSON.stringify(data.user));
+    setCurrentUser(data.user);
+
+    return { success: true };
+  } catch (err) {
+    return {
+      success: false,
+      error: 'Server error',
+    };
+  }
+};
 
   const logout = () => {
     localStorage.removeItem('token');
